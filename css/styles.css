@@ -1,0 +1,51 @@
+/* General Sections */
+* {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+body {
+	background-color: #fff;
+}
+
+/* Layout Sections */
+#dashboard-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fbfbfb;
+	border: 1px solid red;
+}
+
+#dashboard-header {
+	background-color: #7477bf;
+	padding: 15px;
+}
+
+#dashboard-sidebar {
+	background-color: #4d4c72;
+	width: 10%;
+	height: 100vh; /*Temp*/
+	float: left;
+}
+
+#dashboard-main-area {
+	width: 90%;
+	height: 100vh; /*Temp*/
+	float: right;
+}
+
+#dashboard-footer {
+	background-color: #7477bf;
+	min-height: 70px; /*Temp*/
+	clear: both;
+}
+
+/* Typography */
+#dashboard-header h1 {
+	margin: 0;
+}
