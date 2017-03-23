@@ -1,8 +1,15 @@
 /*----------  General Typography  ----------*/
+html {
+	font-size: 14px;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+h1,h2, h3, h4, h5, h6 {
+	margin: 0;
+}
 
 /*----------  Layout Section Typography  ----------*/
 #dashboard-header {
@@ -14,4 +21,51 @@ body {
 			font-weight: 400;
 		}
 	}
+}
+
+/* Main Content Area */
+#dashboard-main-area {
+	h2.section-heading{
+		font-size: 1.1rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $primary-grey;
+		margin-bottom: 1rem;
+	}
+
+	/* Dashboard Chart Area */
+	.dashboard-chart-area {
+		#alert-notification {
+			p {
+				font-size: 0.9rem;
+			}
+
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+
+
+	/* Dashboard Social Area */
+	.dashboard-social-area {
+		.social-col {
+			h3 {
+				color: $primary-purple;
+				margin-bottom: 5px;
+			}
+
+			.social-stats {
+				color: $primary-grey;
+				font-size: 3rem;
+			}
+		}
+
+	}
+
+
+
+
+
+
 }

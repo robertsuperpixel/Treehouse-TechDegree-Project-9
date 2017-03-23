@@ -21,26 +21,75 @@
 	<div id="dashboard-wrapper" class="clearfix"><!-- Start dashboard wrapper-->
 
 		<header id="dashboard-header">
-		 <h1>Your <span>App</span></h1>
+			<h1 id="site-name">Your <span>App</span></h1>
+
+			<div id ="user-notification">
+				<img class="notification-icon" src="./images/icons/icon-bell.svg" alt="Status Icon" />
+				<img class="user-avatar" src="./images/user/user-01.jpg" alt="User Avatar" />
+				<div class="user-name">Josh Sullivan</div>
+			</div>
 		</header>
 		
 		<aside id="dashboard-sidebar">
 			<nav>
 				<ul>
 					<li><a href="#" class="active-tab"><img src="./images/icons/icon-dashboard.svg" alt="Dashboard Icon" title="Dashboard"/></a></li>
-					<li><a href="#"><img src="./images/icons/icon-dashboard.svg" alt="User Profile Icon" title="User Profile"/></a></li>
-					<li><a href="#"><img src="./images/icons/icon-dashboard.svg" alt="Stats Icon" title="Stats"/></a></li>
-					<li><a href="#"><img src="./images/icons/icon-dashboard.svg" alt="Settings Icon" title="Settings"/></a></li>
+					<li><a href="#"><img src="./images/icons/icon-members.svg" alt="User Profile Icon" title="User Profile"/></a></li>
+					<li><a href="#"><img src="./images/icons/icon-visits.svg" alt="Stats Icon" title="Stats"/></a></li>
+					<li><a href="#"><img src="./images/icons/icon-settings.svg" alt="Settings Icon" title="Settings"/></a></li>
 				</ul>
 			</nav>
 		</aside>
 		
 		<section id="dashboard-main-area">
-			boo
+			
+			<div class="dashboard-options"> <!-- Start dashboard options-->
+				<div class="tabs">
+					<button class="tab active-button" onclick="openDashboard(event, 'Dashboard')">Dashboard</button>
+					<button class="tab" onclick="openDashboard(event, 'Dashboard')">Dashboard</button>
+				</div>
+				<div class="search-box">
+					<input type="text" name="search" placeholder="Search">
+				</div>
+			</div> <!-- End dashboard options-->
+
+			<div class="dashboard-chart-area"> <!-- Start dashboard chart area -->
+
+				<div id="alert-notification">
+					<p><strong>Alert: </strong>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.<span id='close-btn'>x</span></p>
+				</div>
+
+				<div class="dashboard-chart-traffic">
+					<h2 class="section-heading">Traffic</h2>
+				</div>
+
+			</div> <!-- End dashboard chart area -->
+
+			<div class="dashboard-social-area"> <!-- Start dashboard social stats -->
+				<h2 class="section-heading">Social Stats</h2>
+
+				<div class="col-3 social-col">
+					<img src="./images/icons/icon-twitter.svg" alt="Twitter Icon" />
+					<h3>Twitter</h3>
+					<div class="social-stats">10,345</div>
+				</div>
+				<div class="col-3 social-col">
+					<img src="./images/icons/icon-facebook.svg" alt="Facebook Icon" />
+					<h3>Facebook</h3>
+					<div class="social-stats">8,739</div>
+				</div>
+				<div class="col-3 social-col">
+					<img src="./images/icons/icon-google-plus.svg" alt="Google+ Icon" />
+					<h3>Google+</h3>
+					<div class="social-stats">2,530</div>
+				</div>
+
+			</div> <!-- Start dashboard social stats -->
+
+
 		</section>
-		
+
 		<footer id="dashboard-footer">
-			boo
 		</footer>
 
 	</div> <!-- End dashboard wrapper-->
