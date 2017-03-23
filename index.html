@@ -4,8 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web App Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -16,11 +21,18 @@
 	<div id="dashboard-wrapper" class="clearfix"><!-- Start dashboard wrapper-->
 
 		<header id="dashboard-header">
-		 <h1>Your App</h1>
+		 <h1>Your <span>App</span></h1>
 		</header>
 		
 		<aside id="dashboard-sidebar">
-			boo
+			<nav>
+				<ul>
+					<li><a href="#" class="active-tab"><img src="./images/icons/icon-dashboard.svg" alt="Dashboard Icon" title="Dashboard"/></a></li>
+					<li><a href="#"><img src="./images/icons/icon-dashboard.svg" alt="User Profile Icon" title="User Profile"/></a></li>
+					<li><a href="#"><img src="./images/icons/icon-dashboard.svg" alt="Stats Icon" title="Stats"/></a></li>
+					<li><a href="#"><img src="./images/icons/icon-dashboard.svg" alt="Settings Icon" title="Settings"/></a></li>
+				</ul>
+			</nav>
 		</aside>
 		
 		<section id="dashboard-main-area">

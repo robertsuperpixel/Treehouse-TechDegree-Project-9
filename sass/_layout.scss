@@ -1,0 +1,105 @@
+/*----------  General Sections  ----------*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $white;
+	font-size: 16px;
+}
+
+/*----------  Layout Sections  ----------*/
+/* Wrapper */
+#dashboard-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: $off-white;
+	//border: 1px solid red;
+
+	&::after {
+		@extend %clearfix;
+	}
+}
+
+
+/* Header */
+#dashboard-header {
+	background-color: $primary-purple;
+	padding: 15px 20px;
+	color: white;
+}
+
+/* Sidebar */
+#dashboard-sidebar {
+	background-color: $secondary-purple;
+	padding: 40px 34px;
+	width: 10%;
+	height: 100vh; /*Temp*/
+	float: left;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			margin-bottom: 50px;
+
+			img {
+				max-width: 100%;
+				height: auto;
+				opacity: 0.7;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			a.active-tab {
+				position: relative;
+
+				&::before {
+					content: '';
+					position: absolute;
+					border-left: 4px solid #85db80;
+					left: -34px;
+					bottom: -10px;
+					width: 2px;
+					height: 70px;
+				}
+
+				img {
+					opacity: 1;
+				}
+			}
+
+			a:hover {
+				position: relative;
+				
+				&::before {
+					content: '';
+					position: absolute;
+					border-left: 4px solid #85db80;
+					left: -34px;
+					bottom: -10px;
+					width: 2px;
+					height: 70px;
+				}
+			}
+		}
+	}
+}
+
+/* Main Content Area */
+#dashboard-main-area {
+	width: 90%;
+	height: 100vh; /*Temp*/
+	float: right;
+}
+
+/* Footer */
+#dashboard-footer {
+	background-color: $primary-purple;
+	min-height: 70px; /*Temp*/
+	clear: both;
+}

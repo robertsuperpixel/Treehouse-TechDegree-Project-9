@@ -1,0 +1,101 @@
+/*Import various partials*/
+/*----------  Primary Colours  ----------*/
+/*----------  Secondary Colours  ----------*/
+/*----------  Padding and Margins  ----------*/
+/*----------  Media query break points  ----------*/
+/*----------  Clearfix Hack  ----------*/
+#dashboard-wrapper::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/*----------  General Typography  ----------*/
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+/*----------  Layout Section Typography  ----------*/
+#dashboard-header h1 {
+  margin: 0;
+  font-size: 1.6rem; }
+  #dashboard-header h1 span {
+    font-weight: 400; }
+
+/*----------  General Sections  ----------*/
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  font-size: 16px; }
+
+/*----------  Layout Sections  ----------*/
+/* Wrapper */
+#dashboard-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fbfbfb; }
+
+/* Header */
+#dashboard-header {
+  background-color: #7477bf;
+  padding: 15px 20px;
+  color: white; }
+
+/* Sidebar */
+#dashboard-sidebar {
+  background-color: #4d4c72;
+  padding: 40px 34px;
+  width: 10%;
+  height: 100vh;
+  /*Temp*/
+  float: left; }
+  #dashboard-sidebar ul {
+    margin: 0;
+    padding: 0; }
+    #dashboard-sidebar ul li {
+      list-style: none;
+      margin-bottom: 50px; }
+      #dashboard-sidebar ul li img {
+        max-width: 100%;
+        height: auto;
+        opacity: 0.7; }
+        #dashboard-sidebar ul li img:hover {
+          opacity: 1; }
+      #dashboard-sidebar ul li a.active-tab {
+        position: relative; }
+        #dashboard-sidebar ul li a.active-tab::before {
+          content: '';
+          position: absolute;
+          border-left: 4px solid #85db80;
+          left: -34px;
+          bottom: -10px;
+          width: 2px;
+          height: 70px; }
+        #dashboard-sidebar ul li a.active-tab img {
+          opacity: 1; }
+      #dashboard-sidebar ul li a:hover {
+        position: relative; }
+        #dashboard-sidebar ul li a:hover::before {
+          content: '';
+          position: absolute;
+          border-left: 4px solid #85db80;
+          left: -34px;
+          bottom: -10px;
+          width: 2px;
+          height: 70px; }
+
+/* Main Content Area */
+#dashboard-main-area {
+  width: 90%;
+  height: 100vh;
+  /*Temp*/
+  float: right; }
+
+/* Footer */
+#dashboard-footer {
+  background-color: #7477bf;
+  min-height: 70px;
+  /*Temp*/
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */

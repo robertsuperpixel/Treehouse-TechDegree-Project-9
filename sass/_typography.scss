@@ -1,0 +1,17 @@
+/*----------  General Typography  ----------*/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*----------  Layout Section Typography  ----------*/
+#dashboard-header {
+	h1 {
+		margin: 0;
+		font-size: 1.6rem;
+
+		span {
+			font-weight: 400;
+		}
+	}
+}
